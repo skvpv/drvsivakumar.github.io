@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dr. V. Sivakumar — Associate Professor, School of Computer Engineering, MIT Manipal (MAHE)</title>
+<meta name="description" content="Dr. V. Sivakumar is an Associate Professor in the School of Computer Engineering at Manipal Institute of Technology (MAHE) and a Senior Member of the IEEE. Research in underwater acoustic sensor networks, evolutionary optimization, machine learning, and applied AI." />
+<meta property="og:title" content="Dr. V. Sivakumar — Associate Professor, MIT Manipal (MAHE)" />
+<meta property="og:description" content="Underwater acoustic sensor networks, evolutionary optimization, machine learning, and applied AI." />
+<meta property="og:type" content="profile" />
+<meta property="og:image" content="https://researcher.manipal.edu/files-asset/85325900/Sivakumar_v.jpg" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23061626'/%3E%3Cg fill='none' stroke='%2346E0CE' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M5 19c2.4 0 2.4-6 4.8-6s2.4 6 4.8 6 2.4-6 4.8-6 2.4 6 4.8 6'/%3E%3C/g%3E%3Ccircle cx='16' cy='9' r='2' fill='%2346E0CE'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --abyss:#061626;
+    --deep:#0A2238;
+    --deep-2:#0E2F4D;
+    --steel:#194766;
+    --aqua:#46E0CE;
+    --aqua-soft:#7FEBDD;
+    --teal-ink:#0A6157;
+    --teal-ink-2:#0C7C6F;
+    --surface:#EEF3F7;
+    --surface-2:#E4ECF2;
+    --card:#FFFFFF;
+    --ink:#0C2236;
+    --slate:#516A82;
+    --slate-2:#6E869B;
+    --line:#D7E0E9;
+    --line-dark:rgba(127,235,221,.16);
+    --white:#F7FAFC;
+    --maxw:1120px;
+    --r:16px;
+    --shadow:0 1px 2px rgba(12,34,54,.04), 0 12px 36px -18px rgba(12,34,54,.22);
+    --shadow-dark:0 18px 48px -22px rgba(0,0,0,.7);
+    --f-display:'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+    --f-body:'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+    --f-mono:'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+  body{
+    margin:0;
+    font-family:var(--f-body);
+    color:var(--ink);
+    background:var(--surface);
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  a{color:var(--teal-ink);text-decoration:none;}
+  a:hover{color:var(--teal-ink-2);}
+  img{max-width:100%;display:block;}
+  h1,h2,h3,h4{font-family:var(--f-display);font-weight:600;line-height:1.12;letter-spacing:-.02em;margin:0;color:var(--ink);}
+  p{margin:0 0 1.1em;}
+  ::selection{background:var(--aqua);color:var(--abyss);}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+  .skip{position:absolute;left:-9999px;top:0;background:var(--aqua);color:var(--abyss);padding:10px 16px;border-radius:8px;z-index:200;font-weight:600;}
+  .skip:focus{left:16px;top:16px;}
+
+  /* ---------- Eyebrow ---------- */
+  .eyebrow{
+    font-family:var(--f-mono);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--teal-ink-2);display:inline-flex;align-items:center;gap:.7em;margin-bottom:1.1rem;font-weight:500;
+  }
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--aqua);display:inline-block;border-radius:2px;}
+  .on-dark .eyebrow{color:var(--aqua-soft);}
+
+  /* ---------- Nav ---------- */
+  header.nav{
+    position:sticky;top:0;z-index:100;
+    background:rgba(8,24,42,.72);backdrop-filter:saturate(160%) blur(14px);
+    border-bottom:1px solid var(--line-dark);
+    transition:background .3s ease;
+  }
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;}
+  .brand{display:flex;align-items:center;gap:11px;font-family:var(--f-display);font-weight:600;color:var(--white);font-size:1.02rem;letter-spacing:-.01em;}
+  .brand:hover{color:var(--white);}
+  .brand .mark{width:30px;height:30px;flex:0 0 auto;}
+  .brand small{display:block;font-family:var(--f-mono);font-size:.6rem;letter-spacing:.18em;color:var(--aqua-soft);text-transform:uppercase;font-weight:500;margin-top:1px;}
+  .navlinks{display:flex;align-items:center;gap:4px;}
+  .navlinks a{
+    color:#C6D6E4;font-size:.86rem;padding:9px 13px;border-radius:9px;font-weight:500;
+    transition:color .2s, background .2s;
+  }
+  .navlinks a:hover{color:#fff;background:rgba(255,255,255,.06);}
+  .navlinks a.active{color:var(--aqua);}
+  .menu-btn{display:none;background:none;border:1px solid var(--line-dark);border-radius:9px;width:42px;height:38px;cursor:pointer;align-items:center;justify-content:center;}
+  .menu-btn span,.menu-btn span::before,.menu-btn span::after{content:"";display:block;width:18px;height:2px;background:#dbe7f1;border-radius:2px;position:relative;transition:.25s;}
+  .menu-btn span::before{position:absolute;top:-6px;}
+  .menu-btn span::after{position:absolute;top:6px;}
+  .menu-btn[aria-expanded="true"] span{background:transparent;}
+  .menu-btn[aria-expanded="true"] span::before{top:0;transform:rotate(45deg);}
+  .menu-btn[aria-expanded="true"] span::after{top:0;transform:rotate(-45deg);}
+
+  @media (max-width:860px){
+    .menu-btn{display:flex;}
+    .navlinks{
+      position:absolute;top:66px;left:0;right:0;flex-direction:column;align-items:stretch;gap:2px;
+      background:rgba(8,24,42,.97);backdrop-filter:blur(14px);padding:14px 16px 22px;
+      border-bottom:1px solid var(--line-dark);
+      transform:translateY(-12px);opacity:0;pointer-events:none;transition:.22s;
+    }
+    .navlinks.open{transform:none;opacity:1;pointer-events:auto;}
+    .navlinks a{padding:13px 12px;font-size:.95rem;}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;overflow:hidden;color:var(--white);
+    background:linear-gradient(177deg,#0c2c47 0%,#0a2238 34%,#071a2c 70%,#050f1c 100%);
+    isolation:isolate;
+  }
+  #sonar{position:absolute;inset:0;width:100%;height:100%;z-index:0;display:block;}
+  .hero::after{ /* vignette + readability */
+    content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:radial-gradient(120% 90% at 18% 36%, rgba(5,15,28,.15) 0%, rgba(5,15,28,.55) 62%, rgba(5,15,28,.85) 100%);
+  }
+  .hero .wrap{position:relative;z-index:2;padding-top:92px;padding-bottom:104px;}
+  .hero-grid{display:grid;grid-template-columns:1.55fr .9fr;gap:54px;align-items:center;}
+  .hero h1{font-size:clamp(2.5rem,6vw,4.25rem);color:#fff;letter-spacing:-.035em;margin-bottom:.35em;}
+  .hero h1 .grad{
+    background:linear-gradient(95deg,var(--aqua) 0%, #79e6ff 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero .role{font-family:var(--f-mono);font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;color:var(--aqua-soft);margin-bottom:1.5rem;display:flex;flex-wrap:wrap;gap:.4em 1.1em;font-weight:500;}
+  .hero .lead{font-size:1.18rem;color:#D3E1EC;max-width:42ch;margin-bottom:2rem;}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:2.2rem;}
+  .btn{
+    display:inline-flex;align-items:center;gap:.5em;font-family:var(--f-body);font-weight:600;font-size:.93rem;
+    padding:13px 22px;border-radius:11px;cursor:pointer;border:1px solid transparent;transition:.2s;white-space:nowrap;
+  }
+  .btn-primary{background:var(--aqua);color:#04202a;}
+  .btn-primary:hover{background:var(--aqua-soft);color:#04202a;transform:translateY(-1px);}
+  .btn-ghost{background:rgba(255,255,255,.04);color:#eaf2f8;border-color:rgba(255,255,255,.22);}
+  .btn-ghost:hover{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.4);}
+  .iconrow{display:flex;flex-wrap:wrap;gap:10px;}
+  .iconrow a{
+    width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;
+    background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);color:#cfe0ec;transition:.2s;
+  }
+  .iconrow a:hover{background:var(--aqua);color:#04202a;border-color:var(--aqua);transform:translateY(-2px);}
+  .iconrow svg{width:18px;height:18px;}
+
+  /* portrait */
+  .portrait-card{position:relative;justify-self:center;width:100%;max-width:300px;}
+  .portrait{
+    position:relative;aspect-ratio:4/5;border-radius:20px;overflow:hidden;
+    border:1px solid rgba(127,235,221,.25);background:linear-gradient(160deg,#0e3350,#08203a);
+    box-shadow:var(--shadow-dark);
+  }
+  .portrait img{width:100%;height:100%;object-fit:cover;}
+  .portrait .fallback{
+    position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
+    font-family:var(--f-display);
+  }
+  .portrait .fallback .mono{font-size:5rem;font-weight:600;color:var(--aqua);letter-spacing:-.04em;}
+  .portrait .fallback small{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.2em;color:#90b0c6;text-transform:uppercase;}
+  .portrait-tag{
+    position:absolute;left:14px;bottom:14px;right:14px;display:flex;justify-content:space-between;align-items:center;
+    font-family:var(--f-mono);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:#bfe9e2;
+    background:rgba(5,16,28,.66);backdrop-filter:blur(6px);border:1px solid rgba(127,235,221,.2);border-radius:9px;padding:7px 11px;
+  }
+  .portrait-tag .dot{width:7px;height:7px;border-radius:50%;background:var(--aqua);box-shadow:0 0 0 3px rgba(70,224,206,.25);}
+
+  /* scroll hint */
+  .scrollhint{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);z-index:2;font-family:var(--f-mono);font-size:.62rem;letter-spacing:.2em;color:#7f9fb6;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:7px;}
+  .scrollhint .line{width:1px;height:30px;background:linear-gradient(var(--aqua),transparent);animation:drop 1.8s ease-in-out infinite;}
+  @keyframes drop{0%,100%{opacity:.3;transform:scaleY(.5);transform-origin:top;}50%{opacity:1;transform:scaleY(1);}}
+
+  @media (max-width:860px){
+    .hero-grid{grid-template-columns:1fr;gap:38px;}
+    .portrait-card{max-width:240px;order:-1;justify-self:start;}
+    .hero .wrap{padding-top:64px;padding-bottom:84px;}
+    .scrollhint{display:none;}
+  }
+
+  /* ---------- Sections ---------- */
+  section{padding:96px 0;position:relative;}
+  .sec-surface{background:var(--surface);}
+  .sec-surface-2{background:var(--surface-2);}
+  .sec-head{max-width:720px;margin-bottom:54px;}
+  .sec-head h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:.5em;}
+  .sec-head p{font-size:1.1rem;color:var(--slate);margin:0;}
+  @media (max-width:600px){section{padding:68px 0;}}
+
+  /* ---------- Metrics (instrument panels) ---------- */
+  .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:8px;}
+  .metric{
+    background:linear-gradient(165deg,#0c2841,#07182b);border:1px solid rgba(127,235,221,.16);
+    border-radius:14px;padding:22px 20px;color:#fff;position:relative;overflow:hidden;
+  }
+  .metric::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--aqua),transparent 70%);}
+  .metric .num{font-family:var(--f-display);font-size:2.5rem;font-weight:600;line-height:1;letter-spacing:-.03em;color:var(--aqua);}
+  .metric .lbl{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:#9fc0d2;margin-top:11px;}
+  .metric .sub{font-family:var(--f-mono);font-size:.6rem;color:#5f7e93;margin-top:3px;letter-spacing:.05em;}
+  .metric-note{font-family:var(--f-mono);font-size:.66rem;color:var(--slate-2);margin-top:14px;letter-spacing:.04em;}
+  @media (max-width:760px){.metrics{grid-template-columns:repeat(2,1fr);}}
+
+  /* ---------- About ---------- */
+  .about-grid{display:grid;grid-template-columns:1.45fr .85fr;gap:56px;align-items:start;}
+  .about-grid .bio p{font-size:1.06rem;color:#2b475d;}
+  .cred{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px;box-shadow:var(--shadow);}
+  .cred h3{font-size:1.05rem;margin-bottom:18px;display:flex;align-items:center;gap:9px;}
+  .cred h3 svg{width:18px;height:18px;color:var(--teal-ink-2);}
+  .cred ul{list-style:none;margin:0 0 4px;padding:0;}
+  .cred li{padding:13px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:2px;}
+  .cred li:last-child{border-bottom:none;padding-bottom:0;}
+  .cred li .deg{font-weight:600;font-size:.97rem;color:var(--ink);}
+  .cred li .where{font-family:var(--f-mono);font-size:.74rem;color:var(--slate-2);letter-spacing:.03em;}
+  @media (max-width:860px){.about-grid{grid-template-columns:1fr;gap:34px;}}
+
+  /* ---------- Research themes ---------- */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px 24px;
+    box-shadow:var(--shadow);transition:transform .25s, box-shadow .25s, border-color .25s;position:relative;overflow:hidden;
+  }
+  .card:hover{transform:translateY(-4px);box-shadow:0 22px 44px -22px rgba(12,34,54,.32);border-color:#b9e6df;}
+  .card .ic{
+    width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;
+    background:linear-gradient(150deg,#0c2841,#0a2138);color:var(--aqua);
+  }
+  .card .ic svg{width:22px;height:22px;}
+  .card h3{font-size:1.13rem;margin-bottom:.5em;}
+  .card p{font-size:.95rem;color:var(--slate);margin:0;}
+  .card .tagline{font-family:var(--f-mono);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-ink-2);margin-bottom:12px;}
+  @media (max-width:920px){.cards{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:600px){.cards{grid-template-columns:1fr;}}
+
+  /* ---------- Fingerprint panel ---------- */
+  .fingerprint{
+    margin-top:30px;background:linear-gradient(165deg,#0c2c47,#071a2d);border-radius:20px;
+    padding:38px 38px 30px;color:#fff;border:1px solid rgba(127,235,221,.18);box-shadow:var(--shadow-dark);
+  }
+  .fingerprint .fp-head{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:baseline;margin-bottom:26px;}
+  .fingerprint h3{color:#fff;font-size:1.3rem;}
+  .fingerprint .fp-note{font-family:var(--f-mono);font-size:.66rem;color:#7f9fb6;letter-spacing:.06em;max-width:38ch;}
+  .fpbars{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 40px;}
+  .fpbar .row{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:.78rem;margin-bottom:7px;color:#cfe0ec;letter-spacing:.04em;}
+  .fpbar .row .pct{color:var(--aqua);}
+  .fptrack{height:6px;border-radius:6px;background:rgba(255,255,255,.08);overflow:hidden;}
+  .fpfill{height:100%;border-radius:6px;background:linear-gradient(90deg,var(--aqua),#79e6ff);transform-origin:left;transform:scaleX(0);transition:transform 1.1s cubic-bezier(.22,1,.36,1);}
+  .fpbars.in .fpfill{transform:scaleX(1);}
+  @media (max-width:680px){.fpbars{grid-template-columns:1fr;}.fingerprint{padding:28px 22px;}}
+
+  /* ---------- Output-per-year chart ---------- */
+  .yearchart{margin-top:30px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px 26px 20px;box-shadow:var(--shadow);}
+  .yearchart h3{font-size:1.08rem;margin-bottom:4px;}
+  .yearchart .yc-note{font-family:var(--f-mono);font-size:.66rem;color:var(--slate-2);letter-spacing:.04em;margin-bottom:24px;}
+  .bars{display:flex;align-items:flex-end;gap:10px;height:140px;}
+  .bar{flex:1;display:flex;flex-direction:column;align-items:center;gap:9px;height:100%;justify-content:flex-end;}
+  .bar .col{width:100%;max-width:38px;border-radius:6px 6px 3px 3px;background:linear-gradient(180deg,var(--aqua),#1f9fb5);transform-origin:bottom;transform:scaleY(0);transition:transform .9s cubic-bezier(.22,1,.36,1);}
+  .bars.in .col{transform:scaleY(1);}
+  .bar .val{font-family:var(--f-mono);font-size:.74rem;font-weight:600;color:var(--teal-ink-2);}
+  .bar .yr{font-family:var(--f-mono);font-size:.66rem;color:var(--slate-2);}
+  .bar.empty .col{background:var(--line);}
+
+  /* ---------- Publications ---------- */
+  .publist{display:flex;flex-direction:column;gap:14px;}
+  .pub{
+    background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px 26px;box-shadow:var(--shadow);
+    display:grid;grid-template-columns:84px 1fr;gap:22px;transition:border-color .25s, transform .25s;
+  }
+  .pub:hover{border-color:#b9e6df;transform:translateY(-2px);}
+  .pub .yearbox{
+    font-family:var(--f-mono);text-align:center;border-right:1px solid var(--line);padding-right:18px;
+  }
+  .pub .yearbox .y{font-size:1.45rem;font-weight:600;color:var(--ink);font-family:var(--f-display);line-height:1;}
+  .pub .yearbox .venue-type{font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-ink-2);margin-top:7px;}
+  .pub h3{font-size:1.08rem;line-height:1.3;margin-bottom:9px;}
+  .pub h3 a{color:var(--ink);}
+  .pub h3 a:hover{color:var(--teal-ink-2);}
+  .pub .authors{font-size:.9rem;color:var(--slate);margin-bottom:5px;}
+  .pub .authors b{color:var(--ink);}
+  .pub .venue{font-family:var(--f-mono);font-size:.76rem;color:var(--slate-2);letter-spacing:.02em;margin-bottom:13px;}
+  .pub .venue em{color:var(--teal-ink-2);font-style:normal;}
+  .tags{display:flex;flex-wrap:wrap;gap:7px;}
+  .tag{font-family:var(--f-mono);font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:7px;border:1px solid var(--line);color:var(--slate);background:var(--surface);}
+  .tag.oa{color:var(--teal-ink);border-color:#bfe6df;background:#eafaf6;}
+  .tag.cited{color:#9a5a00;border-color:#f0dcb8;background:#fdf6e8;}
+  .tag.doi{color:var(--teal-ink-2);border-color:#cfe7e2;}
+  .tag.doi:hover{background:var(--aqua);color:#04202a;border-color:var(--aqua);}
+  @media (max-width:560px){.pub{grid-template-columns:1fr;gap:14px;}.pub .yearbox{display:flex;align-items:baseline;gap:12px;border-right:none;border-bottom:1px solid var(--line);padding:0 0 12px;}.pub .yearbox .venue-type{margin-top:0;}}
+
+  .alllinks{margin-top:26px;display:flex;flex-wrap:wrap;gap:11px;align-items:center;}
+  .alllinks .lab{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--slate-2);margin-right:4px;}
+  .chip{display:inline-flex;align-items:center;gap:.45em;padding:9px 15px;border-radius:10px;border:1px solid var(--line);background:var(--card);font-size:.84rem;font-weight:500;color:var(--ink);transition:.2s;box-shadow:var(--shadow);}
+  .chip:hover{border-color:var(--aqua);color:var(--teal-ink-2);transform:translateY(-1px);}
+  .chip svg{width:15px;height:15px;}
+
+  /* ---------- Projects ---------- */
+  .proj{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+  .pcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px;box-shadow:var(--shadow);position:relative;overflow:hidden;transition:transform .25s, border-color .25s;}
+  .pcard:hover{transform:translateY(-3px);border-color:#b9e6df;}
+  .pcard .idx{font-family:var(--f-mono);font-size:.72rem;color:var(--aqua-soft);letter-spacing:.1em;position:absolute;top:22px;right:24px;background:var(--abyss);padding:4px 9px;border-radius:7px;}
+  .pcard h3{font-size:1.18rem;margin-bottom:.6em;max-width:24ch;}
+  .pcard p{font-size:.95rem;color:var(--slate);margin-bottom:1em;}
+  .pcard .meta{display:flex;flex-wrap:wrap;gap:7px;}
+  @media (max-width:760px){.proj{grid-template-columns:1fr;}}
+
+  .grants{margin-top:22px;background:var(--card);border:1px dashed var(--line);border-radius:var(--r);padding:26px;display:flex;gap:18px;align-items:flex-start;box-shadow:var(--shadow);}
+  .grants svg{width:24px;height:24px;color:var(--teal-ink-2);flex:0 0 auto;margin-top:2px;}
+  .grants h4{font-family:var(--f-display);font-size:1.02rem;margin:0 0 6px;}
+  .grants p{margin:0;font-size:.93rem;color:var(--slate);}
+
+  /* ---------- Teaching & Mentorship ---------- */
+  .tm-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .tm-block{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:30px;box-shadow:var(--shadow);}
+  .tm-block h3{font-size:1.2rem;margin-bottom:6px;display:flex;align-items:center;gap:10px;}
+  .tm-block h3 svg{width:20px;height:20px;color:var(--teal-ink-2);}
+  .tm-block .sub{color:var(--slate);font-size:.96rem;margin-bottom:20px;}
+  .courselist{list-style:none;padding:0;margin:0;}
+  .courselist li{padding:14px 0;border-bottom:1px solid var(--line);}
+  .courselist li:last-child{border-bottom:none;padding-bottom:0;}
+  .courselist .cname{font-weight:600;color:var(--ink);font-size:.98rem;display:block;}
+  .courselist .clevel{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-ink-2);}
+  .interests{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px;}
+  .pill{font-size:.84rem;padding:7px 13px;border-radius:999px;background:var(--surface);border:1px solid var(--line);color:var(--ink);font-weight:500;}
+  @media (max-width:760px){.tm-grid{grid-template-columns:1fr;}}
+
+  /* ---------- Awards ---------- */
+  .awards{display:flex;flex-direction:column;gap:14px;}
+  .award{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 26px;box-shadow:var(--shadow);display:grid;grid-template-columns:64px 1fr;gap:20px;align-items:center;}
+  .award .ayr{font-family:var(--f-mono);font-weight:600;color:var(--teal-ink-2);font-size:.92rem;}
+  .award h3{font-size:1.05rem;margin-bottom:4px;}
+  .award p{margin:0;font-size:.92rem;color:var(--slate);}
+  @media (max-width:560px){.award{grid-template-columns:1fr;gap:6px;}}
+
+  /* ---------- News ---------- */
+  .news{position:relative;padding-left:26px;}
+  .news::before{content:"";position:absolute;left:6px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--aqua),var(--line));}
+  .nitem{position:relative;padding:0 0 30px 26px;}
+  .nitem:last-child{padding-bottom:0;}
+  .nitem::before{content:"";position:absolute;left:-2px;top:5px;width:14px;height:14px;border-radius:50%;background:var(--card);border:3px solid var(--aqua);box-shadow:0 0 0 4px var(--surface-2);}
+  .nitem .nd{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-ink-2);margin-bottom:5px;}
+  .nitem h3{font-size:1.04rem;margin-bottom:5px;line-height:1.34;}
+  .nitem p{margin:0;font-size:.94rem;color:var(--slate);}
+
+  /* ---------- Contact ---------- */
+  .contact{background:linear-gradient(177deg,#0a2238 0%,#071a2c 60%,#050f1c 100%);color:#fff;}
+  .contact .sec-head h2{color:#fff;}
+  .contact .sec-head p{color:#aec4d4;}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+  .cinfo p{color:#c2d4e2;font-size:1.04rem;}
+  .cline{display:flex;align-items:center;gap:14px;padding:15px 0;border-bottom:1px solid var(--line-dark);}
+  .cline:last-child{border-bottom:none;}
+  .cline svg{width:19px;height:19px;color:var(--aqua);flex:0 0 auto;}
+  .cline a,.cline span{color:#dbe7f1;font-size:.97rem;}
+  .cline a:hover{color:var(--aqua);}
+  .cline .ct{font-family:var(--f-mono);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:#7f9fb6;display:block;margin-bottom:1px;}
+  .clinks{display:grid;grid-template-columns:1fr 1fr;gap:11px;}
+  .clink{display:flex;align-items:center;gap:11px;padding:15px 16px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);color:#dbe7f1;transition:.2s;font-weight:500;font-size:.92rem;}
+  .clink:hover{background:var(--aqua);color:#04202a;border-color:var(--aqua);transform:translateY(-2px);}
+  .clink svg{width:18px;height:18px;flex:0 0 auto;}
+  @media (max-width:760px){.contact-grid{grid-template-columns:1fr;gap:34px;}.clinks{grid-template-columns:1fr;}}
+
+  /* ---------- Footer ---------- */
+  footer.foot{background:#04101c;color:#7f9fb6;padding:38px 0;border-top:1px solid rgba(127,235,221,.1);}
+  .foot .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
+  .foot .fb{display:flex;align-items:center;gap:10px;color:#cfe0ec;font-family:var(--f-display);font-weight:600;}
+  .foot .fb svg{width:24px;height:24px;}
+  .foot p{margin:0;font-size:.82rem;font-family:var(--f-mono);letter-spacing:.03em;}
+  .foot a{color:#9fc0d2;}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease, transform .7s cubic-bezier(.22,1,.36,1);}
+  .reveal.in{opacity:1;transform:none;}
+  @media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none;transition:none;}}
+</style>
+<style>
+  .pubfilter{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:26px;}
+  .fbtn{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:8px 15px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--slate);cursor:pointer;transition:.2s;}
+  .fbtn:hover{border-color:var(--aqua);color:var(--teal-ink-2);}
+  .fbtn.active{background:var(--abyss);color:var(--aqua);border-color:var(--abyss);}
+  .pub[hidden]{display:none;}
+  .sub-h{display:flex;align-items:center;gap:13px;margin:50px 0 24px;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--teal-ink-2);}
+  .sub-h::after{content:"";flex:1;height:1px;background:var(--line);}
+  .sub-h.first{margin-top:0;}
+  .rbadge{align-self:flex-start;display:inline-flex;align-items:center;font-family:var(--f-mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:7px;font-weight:600;margin-bottom:14px;}
+  .rbadge.guide{background:#eafaf6;color:var(--teal-ink);border:1px solid #bfe6df;}
+  .rbadge.coguide{background:var(--surface-2);color:var(--slate);border:1px solid var(--line);}
+  .scholars{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+  .pcard.scholar{display:flex;flex-direction:column;}
+  .pcard.scholar h3{font-size:1.06rem;line-height:1.34;margin-bottom:12px;max-width:none;}
+  .pcard.scholar .meta{margin-top:auto;}
+  .pcard.scholar .cosup{font-family:var(--f-mono);font-size:.7rem;color:var(--slate-2);margin-top:12px;letter-spacing:.02em;}
+  .cred li .thesis{font-size:.8rem;color:var(--slate);font-style:italic;margin-top:4px;line-height:1.45;}
+  @media (max-width:760px){.scholars{grid-template-columns:1fr;}}
+  .about-grid .bio p{text-align:justify;text-justify:inter-word;hyphens:auto;}
+  .pcard.ongoing{padding-top:30px;}
+  .pcard.ongoing h3{max-width:none;font-size:1.04rem;line-height:1.38;padding-right:42px;margin-bottom:14px;}
+  .modal-overlay{position:fixed;inset:0;z-index:300;background:rgba(4,12,22,.72);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;padding:20px;}
+  .modal-overlay[hidden]{display:none;}
+  .modal{position:relative;width:100%;max-width:460px;background:linear-gradient(168deg,#0d2c46,#08203a);border:1px solid rgba(127,235,221,.22);border-radius:18px;box-shadow:var(--shadow-dark);padding:34px 30px 30px;color:#eaf2f8;max-height:92vh;overflow:auto;}
+  .modal h3{color:#fff;font-size:1.4rem;margin-bottom:.5em;}
+  .modal .modal-sub{color:#b6cad9;font-size:.95rem;margin-bottom:22px;}
+  .modal-close{position:absolute;top:14px;right:16px;background:none;border:none;color:#9fc0d2;font-size:1.7rem;line-height:1;cursor:pointer;padding:4px 8px;border-radius:8px;}
+  .modal-close:hover{color:#fff;background:rgba(255,255,255,.08);}
+  .modal form{display:flex;flex-direction:column;gap:14px;}
+  .modal label{display:flex;flex-direction:column;gap:6px;font-family:var(--f-mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:#9fc0d2;}
+  .modal .req{color:var(--aqua);margin-left:3px;}
+  .modal input,.modal textarea{font-family:var(--f-body);font-size:.95rem;text-transform:none;letter-spacing:normal;color:#fff;background:rgba(255,255,255,.06);border:1px solid rgba(127,235,221,.22);border-radius:10px;padding:11px 13px;width:100%;resize:vertical;}
+  .modal input:focus,.modal textarea:focus{outline:none;border-color:var(--aqua);background:rgba(255,255,255,.1);}
+  .modal input::placeholder,.modal textarea::placeholder{color:#7f9fb6;}
+  .modal .btn-primary{margin-top:6px;justify-content:center;}
+  .modal .btn-primary[disabled]{opacity:.6;cursor:default;}
+  .form-status{font-family:var(--f-mono);font-size:.8rem;letter-spacing:.02em;margin:4px 0 0;min-height:1em;}
+  .form-status.ok{color:var(--aqua-soft);}
+  .form-status.err{color:#ffb4a8;}
+</style>
+</head>
+<body>
+<a class="skip" href="#about">Skip to content</a>
+<header class="nav" id="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#0c2c47"/><g fill="none" stroke="#46E0CE" stroke-width="2" stroke-linecap="round"><path d="M5 19c2.4 0 2.4-6 4.8-6s2.4 6 4.8 6 2.4-6 4.8-6 2.4 6 4.8 6"/></g><circle cx="16" cy="9" r="2" fill="#46E0CE"/></svg><span>Dr. V. Sivakumar<small>School of Computer Engineering · MIT MANIPAL</small></span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span></button>
+    <nav class="navlinks" id="navlinks" aria-label="Primary"><a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#patents">Patents</a><a href="#supervision">Supervision</a><a href="#teaching">Teaching</a><a href="#recognition">Recognition</a><a href="#contact">Contact</a></nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="hero" aria-label="Intro">
+  <canvas id="sonar" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="role"><span>Associate Professor</span><span>IEEE Senior Member</span><span>School of Computer Engineering · MIT Manipal (MAHE)</span></div>
+        <h1>Dr. V. <span class="grad">Sivakumar</span></h1>
+        <p class="lead">Designing energy-efficient, intelligent systems for underwater acoustic sensor networks — and applying machine learning across healthcare, security, agriculture, and the environment.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#research">Explore research</a>
+          <button type="button" class="btn btn-ghost" id="cvRequestBtn" aria-haspopup="dialog">Request CV</button>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+        <div class="iconrow" aria-label="Profiles">
+          <a href="https://scholar.google.com/citations?hl=en&user=Lfr4JNYAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3L1 9l11 6 9-4.9V17h2V9L12 3z"/></svg></a>
+          <a href="https://www.scopus.com/authid/detail.uri?authorId=57201771303" target="_blank" rel="noopener" aria-label="Scopus" title="Scopus Author Profile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15 9.2c-.8-.7-1.9-1-2.9-1-1.6 0-2.8.8-2.8 2.1 0 3 6 1.4 6 4.4 0 1.4-1.4 2.3-3 2.3-1.2 0-2.4-.5-3.1-1.3" stroke-linecap="round"/></svg></a>
+          <a href="https://orcid.org/0000-0001-9910-726X" target="_blank" rel="noopener" aria-label="ORCID" title="ORCID 0000-0001-9910-726X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM8.3 7.4a.95.95 0 110 1.9.95.95 0 010-1.9zM7.4 10.2h1.8v7.3H7.4v-7.3zm3.4 0h3.3c2.6 0 3.9 1.7 3.9 3.7 0 2.1-1.6 3.6-3.9 3.6h-3.3v-7.3zm1.8 1.6v4.1h1.4c1.5 0 2.3-.9 2.3-2 0-1.2-.7-2.1-2.3-2.1h-1.4z"/></svg></a>
+          <a href="https://www.webofscience.com/wos/author/record/AAI-2585-2020" target="_blank" rel="noopener" aria-label="Web of Science" title="Web of Science ResearcherID AAI-2585-2020"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18" stroke-linecap="round"/><path d="M12 3a14 14 0 010 18M12 3a14 14 0 000 18" stroke-linecap="round"/></svg></a>
+          <a href="https://www.linkedin.com/in/dr-v-sivakumar-ph-d-me-be-9090b21a9" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM8.3 18.3H5.7V9.8h2.6v8.5zM7 8.6a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm11.3 9.7h-2.6v-4.4c0-1.1-.4-1.8-1.4-1.8-.7 0-1.2.5-1.4 1-.1.2-.1.5-.1.7v4.5H10.2V9.8h2.6v1.1c.4-.6 1-1.3 2.4-1.3 1.8 0 3.1 1.1 3.1 3.6v5.1z"/></svg></a>
+        </div>
+      </div>
+      <div class="portrait-card">
+        <div class="portrait">
+          <img id="portraitImg" src="https://researcher.manipal.edu/files-asset/85325900/Sivakumar_v.jpg?w=480&f=jpg" alt="Dr. V. Sivakumar" />
+          <div class="fallback" id="portraitFallback" style="display:none;"><span class="mono">VS</span><small>Dr. V. Sivakumar</small></div>
+          <div class="portrait-tag"><span><span class="dot" style="display:inline-block;margin-right:6px;"></span>Manipal, India</span><span>576104</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scrollhint" aria-hidden="true"><span class="line"></span>Scroll</div>
+</section>
+<section class="sec-surface" id="about" aria-label="About">
+  <div class="wrap">
+    <div class="about-grid reveal">
+      <div class="bio">
+        <span class="eyebrow">About</span>
+        <h2 style="font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:.7em;">Building intelligent systems for challenging environments.</h2>
+        <p>Dr. V. Sivakumar is an Associate Professor in the <strong>School of Computer Engineering</strong> at the Manipal Institute of Technology (MIT), Manipal Academy of Higher Education (MAHE), and a Senior Member of the IEEE. He holds a B.E. in Computer Science &amp; Engineering, an M.E. in Information Technology (Software Engineering), and a Ph.D. in Computer Science Engineering from VIT, Chennai, where his doctoral work addressed underwater acoustic sensor node scheduling and energy-efficient routing using evolutionary algorithms.</p>
+        <p>His research sits at the meeting point of underwater acoustic sensor networks, evolutionary and nature-inspired optimization, and machine learning. A central thread is the design of energy-efficient, reliable data-collection strategies for three-dimensional underwater wireless sensor networks — drawing on genetic and memetic algorithms, sink mobility, and, more recently, reinforcement learning. In parallel, he applies machine learning and deep learning to clinical decision support, network security, agriculture, and environmental analytics.</p>
+        <p>Across more than a decade in academia — at VIT, SRM IST, Vel Tech, and now MIT Manipal — his work appears in venues such as <em>IEEE Access</em>, the <em>Journal of Big Data</em>, <em>Computer Communications</em>, and <em>Intelligence-Based Medicine</em>. He holds five granted patents and design registrations, supervises doctoral scholars, and serves on doctoral advisory committees and journal review boards. He welcomes collaboration with researchers, students, and industry partners working on intelligent networked systems and applied AI.</p>
+      </div>
+      <aside class="cred" aria-label="Qualifications">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M12 4 2 9l10 5 10-5-10-5z" stroke-linejoin="round"/><path d="M6 11.5V16c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5v-4.5" stroke-linejoin="round"/></svg>Qualifications</h3>
+        <ul>
+          <li><span class="deg">Ph.D. — Computer Science Engineering</span><span class="where">VIT, Chennai · 2020 · Wireless Sensor Networks</span><span class="thesis">“Underwater Acoustic Sensor Node Scheduling and Energy-Efficient Routing Problem Using Evolutionary Algorithms”</span></li>
+          <li><span class="deg">M.E. — Information Technology</span><span class="where">Anna University (SRM Easwari Engg. College) · 2012 · Software Engineering</span></li>
+          <li><span class="deg">B.E. — Computer Science &amp; Engineering</span><span class="where">Anna University (SRR Engg. College) · 2010</span></li>
+        </ul>
+      </aside>
+    </div>
+    <div class="metrics reveal" aria-label="Research metrics">
+      <div class="metric"><div class="num" data-count="399">0</div><div class="lbl">Citations</div><div class="sub">Scopus</div></div>
+      <div class="metric"><div class="num" data-count="10">0</div><div class="lbl">h-index</div><div class="sub">Scopus</div></div>
+      <div class="metric"><div class="num" data-count="37">0</div><div class="lbl">Indexed outputs</div><div class="sub">journals · conf. · chapters</div></div>
+      <div class="metric"><div class="num" data-count="5">0</div><div class="lbl">Granted patents</div><div class="sub">design &amp; utility</div></div>
+    </div>
+    <p class="metric-note reveal">Citations, h-index and indexed-output counts from Scopus.</p>
+  </div>
+</section>
+<section class="sec-surface-2" id="research" aria-label="Research">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Research</span>
+      <h2>Intelligent systems for the ocean, the clinic, and the network edge.</h2>
+      <p>A research program that pairs evolutionary and learning-based methods with hard, real-world systems — from three-dimensional underwater sensor networks to medical imaging and network security.</p>
+    </div>
+    <div class="cards reveal">
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 13c2-3 4-3 6 0s4 3 6 0 4-3 6 0" stroke-linecap="round"/><path d="M2 18c2-3 4-3 6 0s4 3 6 0 4-3 6 0" stroke-linecap="round"/><circle cx="8" cy="6" r="1.4" fill="currentColor" stroke="none"/><circle cx="16" cy="7" r="1.4" fill="currentColor" stroke="none"/></svg></div><div class="tagline">Core focus</div><h3>Underwater Acoustic Sensor Networks</h3><p>Energy-efficient node scheduling, lifetime enhancement, localization, and 3D mobility control for underwater wireless sensor networks.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="6" cy="6" r="2.3"/><circle cx="18" cy="6" r="2.3"/><circle cx="12" cy="18" r="2.3"/><path d="M7.7 7.6 11 16M16.3 7.6 13 16M8 6h8" stroke-linecap="round"/></svg></div><div class="tagline">Methods</div><h3>Evolutionary &amp; Nature-Inspired Optimization</h3><p>Genetic, memetic, flower-pollination, Archimedes, and snake-swarm algorithms applied to NP-hard networking and resource-allocation problems.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="7" r="2"/><circle cx="19" cy="17" r="2"/><path d="M6.7 7 10.4 11M6.7 17 10.4 13M13.7 11 17.3 7.8M13.7 13 17.3 16.2" stroke-linecap="round"/></svg></div><div class="tagline">Methods</div><h3>Machine Learning &amp; Deep Learning</h3><p>Classification, prediction, and ensemble models spanning health, security, education, and environmental domains.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z" stroke-linejoin="round"/><circle cx="12" cy="12" r="2.6"/></svg></div><div class="tagline">Applications</div><h3>Computer Vision &amp; Medical Imaging</h3><p>Decision-support systems built on dental orthopantomograms, lung imaging, and other diagnostic image analysis.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 3v3M14 3v3M10 18v3M14 18v3M3 10h3M3 14h3M18 10h3M18 14h3" stroke-linecap="round"/></svg></div><div class="tagline">Applications</div><h3>IoT, Edge &amp; Network Security</h3><p>Energy scheduling, edge resource allocation, and machine-learning-driven detection of advanced persistent threats.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3l1.8 4.7L18.5 9l-4.7 1.8L12 15.5l-1.8-4.7L5.5 9l4.7-1.3z" stroke-linejoin="round"/><path d="M18 16l.8 2.2L21 19l-2.2.8L18 22l-.8-2.2L15 19l2.2-.8z" stroke-linejoin="round"/></svg></div><div class="tagline">Applications</div><h3>Applied AI, LLMs &amp; Environmental Analytics</h3><p>Large language models for agricultural knowledge transfer, and time-series analysis of long-term climate patterns.</p></div>
+    </div>
+
+    <div class="reveal"><div class="sub-h first">Current &amp; ongoing research · with students and co-faculty</div></div>
+    <div class="proj reveal">
+      <div class="pcard ongoing"><span class="idx">01</span><h3>3D Multi-Dock Urgency-Weighted Routing Benchmark for AUV Data Collection in Underwater Sensor Networks</h3><div class="meta"><span class="pill">Underwater WSN</span><span class="pill">AUV routing</span></div></div>
+      <div class="pcard ongoing"><span class="idx">02</span><h3>Depth-Oriented Cooperative Mission Planning for Hierarchical Multi-AUV Data Harvesting in Large-Scale Underwater Sensor Networks</h3><div class="meta"><span class="pill">Underwater WSN</span><span class="pill">Multi-AUV</span></div></div>
+      <div class="pcard ongoing"><span class="idx">03</span><h3>Route-Separable Memetic Algorithm for Priority-Aware Multi-AUV Data Collection in Current-Disturbed 3D Underwater Sensor Networks</h3><div class="meta"><span class="pill">Evolutionary</span><span class="pill">Multi-AUV</span></div></div>
+      <div class="pcard ongoing"><span class="idx">04</span><h3>Federated Learning for Secure Multi-Broker Fraud Detection in Online Trading: A Privacy-Preserving Framework with Adaptive Noise Scaling and Cross-Dataset Validation</h3><div class="meta"><span class="pill">Federated learning</span><span class="pill">Privacy</span></div></div>
+      <div class="pcard ongoing"><span class="idx">05</span><h3>Comparative Evaluation of Machine Learning Models for Temperature Forecasting in Antarctic Polar Regions</h3><div class="meta"><span class="pill">Forecasting</span><span class="pill">Antarctic</span></div></div>
+      <div class="pcard ongoing"><span class="idx">06</span><h3>Cross-Station Transfer Learning for Temperature Forecasting under Sparse Observations at India’s Antarctic Research Stations</h3><div class="meta"><span class="pill">Transfer learning</span><span class="pill">Antarctic</span></div></div>
+      <div class="pcard ongoing"><span class="idx">07</span><h3>AI-Based Flower Pollination Detection and Monitoring System</h3><div class="meta"><span class="pill">Computer vision</span><span class="pill">Agriculture</span></div></div>
+    </div>
+
+    <div class="fingerprint reveal" aria-label="Topic fingerprint">
+      <div class="fp-head">
+        <h3>Topic fingerprint</h3>
+        <p class="fp-note">Concept weighting derived from indexed works · MAHE Pure / Elsevier Fingerprint Engine™</p>
+      </div>
+      <div class="fpbars"><div class="fpbar"><div class="row"><span>Algorithms</span><span class="pct">100%</span></div><div class="fptrack"><div class="fpfill" style="width:100%"></div></div></div><div class="fpbar"><div class="row"><span>Sensors</span><span class="pct">92%</span></div><div class="fptrack"><div class="fpfill" style="width:92%"></div></div></div><div class="fpbar"><div class="row"><span>Data</span><span class="pct">81%</span></div><div class="fptrack"><div class="fpfill" style="width:81%"></div></div></div><div class="fpbar"><div class="row"><span>Performance</span><span class="pct">74%</span></div><div class="fptrack"><div class="fpfill" style="width:74%"></div></div></div><div class="fpbar"><div class="row"><span>Underwater</span><span class="pct">65%</span></div><div class="fptrack"><div class="fpfill" style="width:65%"></div></div></div><div class="fpbar"><div class="row"><span>Machine learning</span><span class="pct">60%</span></div><div class="fptrack"><div class="fpfill" style="width:60%"></div></div></div><div class="fpbar"><div class="row"><span>Learning</span><span class="pct">57%</span></div><div class="fptrack"><div class="fpfill" style="width:57%"></div></div></div><div class="fpbar"><div class="row"><span>Prediction</span><span class="pct">48%</span></div><div class="fptrack"><div class="fpfill" style="width:48%"></div></div></div></div>
+    </div>
+
+    <div class="yearchart reveal" aria-label="Research output per year">
+      <h3>Research output per year</h3>
+      <p class="yc-note">Scopus / Pure-indexed outputs · 2018–2026</p>
+      <div class="bars" id="yearBars"><div class="bar"><div class="col" style="height:100%"></div><div class="val">6</div><div class="yr">'18</div></div><div class="bar empty"><div class="col" style="height:4%"></div><div class="val">0</div><div class="yr">'19</div></div><div class="bar"><div class="col" style="height:83%"></div><div class="val">5</div><div class="yr">'20</div></div><div class="bar"><div class="col" style="height:50%"></div><div class="val">3</div><div class="yr">'21</div></div><div class="bar"><div class="col" style="height:33%"></div><div class="val">2</div><div class="yr">'22</div></div><div class="bar"><div class="col" style="height:83%"></div><div class="val">5</div><div class="yr">'23</div></div><div class="bar"><div class="col" style="height:100%"></div><div class="val">6</div><div class="yr">'24</div></div><div class="bar"><div class="col" style="height:100%"></div><div class="val">6</div><div class="yr">'25</div></div><div class="bar"><div class="col" style="height:50%"></div><div class="val">3</div><div class="yr">'26</div></div></div>
+    </div>
+  </div>
+</section>
+<section class="sec-surface" id="publications" aria-label="Publications">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Publications</span>
+      <h2>Peer-reviewed publications.</h2>
+      <p>More than 30 journal articles, conference papers, and book chapters across underwater networking, machine learning, and applied AI. Full records are available through the linked profiles below.</p>
+    </div>
+    <div class="pubfilter reveal" role="group" aria-label="Filter publications">
+      <button class="fbtn active" data-filter="all">All · 34</button>
+      <button class="fbtn" data-filter="journal">Journal · 27</button>
+      <button class="fbtn" data-filter="conference">Conference · 5</button>
+      <button class="fbtn" data-filter="chapter">Book chapter · 2</button>
+    </div>
+    <div class="publist reveal" id="publist">
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2026</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1016/j.ibmed.2026.100345" target="_blank" rel="noopener">Enhancing AI-based oral decision support systems: hybrid image processing for detecting impacted maxillary canines in orthopantomograms</a></h3>
+          <div class="authors">R. C. H, V. Mayya, V. <b>Sivakumar</b>, V. Patil, D. Pai &amp; P. Varchas</div>
+          <div class="venue">Intelligence-Based Medicine (Elsevier)</div>
+          <div class="tags"><span class="tag">Scopus</span><span class="tag oa">Open Access</span><a class="tag doi" href="https://doi.org/10.1016/j.ibmed.2026.100345" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2026</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.3390/agriengineering8010038" target="_blank" rel="noopener">AgroLLM: connecting farmers and agricultural practices through large language models for enhanced knowledge transfer and practical application</a></h3>
+          <div class="authors">D. J. S. Ravindran, I. Skarga-Bandurova, V. <b>Sivakumar</b>, M. Awais &amp; M. S</div>
+          <div class="venue">AgriEngineering (MDPI)</div>
+          <div class="tags"><span class="tag">Scopus</span><span class="tag oa">Open Access</span><a class="tag doi" href="https://doi.org/10.3390/agriengineering8010038" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="conference">
+        <div class="yearbox"><div class="y">2026</div><div class="venue-type">Conference</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1109/ICMSCI67830.2026.11469209" target="_blank" rel="noopener">Reinforcement learning-based energy-efficient mobility control in 3D underwater sensor networks</a></h3>
+          <div class="authors">L. D&#x27;Souza, V. <b>Sivakumar</b>, N. D. Adesh &amp; R. Shirwaikar</div>
+          <div class="venue">Proc. 2nd Int. Conf. on Multi-Agent Systems for Collaborative Intelligence, ICMSCI 2026 (IEEE)</div>
+          <div class="tags"><span class="tag">Scopus</span><a class="tag doi" href="https://doi.org/10.1109/ICMSCI67830.2026.11469209" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2025</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1186/s40537-025-01272-w" target="_blank" rel="noopener">An optimized hybrid ensemble machine learning model combining multiple classifiers for detecting advanced persistent threats in networks</a></h3>
+          <div class="authors">N. Ibrahim, N. R. Rajalakshmi, V. <b>Sivakumar</b> &amp; L. Sharmila</div>
+          <div class="venue">Journal of Big Data (Springer)</div>
+          <div class="tags"><span class="tag">SCI</span><span class="tag oa">Open Access</span><span class="tag cited">Cited 8×</span><a class="tag doi" href="https://doi.org/10.1186/s40537-025-01272-w" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2025</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1109/ACCESS.2025.3643171" target="_blank" rel="noopener">Detection of long-term climatic patterns in polar weather using time series analysis</a></h3>
+          <div class="authors">V. S. Samy, T. Veena &amp; V. <b>Sivakumar</b></div>
+          <div class="venue">IEEE Access</div>
+          <div class="tags"><span class="tag">SCI</span><span class="tag oa">Open Access</span><a class="tag doi" href="https://doi.org/10.1109/ACCESS.2025.3643171" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2025</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1186/s13677-025-00733-0" target="_blank" rel="noopener">Optimizing energy task offloading technique using IoMT cloud in healthcare applications</a></h3>
+          <div class="authors">S. Kaliraj, V. <b>Sivakumar</b>, et al.</div>
+          <div class="venue">Journal of Cloud Computing (Springer)</div>
+          <div class="tags"><span class="tag">SCI</span><span class="tag oa">Open Access</span><a class="tag doi" href="https://doi.org/10.1186/s13677-025-00733-0" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2024</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1007/s10515-024-00467-4" target="_blank" rel="noopener">A holistic approach to software fault prediction with dynamic classification</a></h3>
+          <div class="authors">S. Kaliraj, V. <b>Sivakumar</b>, et al.</div>
+          <div class="venue">Automated Software Engineering (Springer)</div>
+          <div class="tags"><span class="tag">SCI</span><a class="tag doi" href="https://doi.org/10.1007/s10515-024-00467-4" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="chapter">
+        <div class="yearbox"><div class="y">2024</div><div class="venue-type">Chapter</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1016/B978-0-443-16147-6.00004-9" target="_blank" rel="noopener">Prediction of software faults using machine learning algorithms and mitigating risks with feature selection</a></h3>
+          <div class="authors">F. J. Joseph, V. <b>Sivakumar</b>, et al.</div>
+          <div class="venue">Uncertainty, Computational Techniques, and Decision Intelligence (Academic Press)</div>
+          <div class="tags"><span class="tag">Scopus</span><a class="tag doi" href="https://doi.org/10.1016/B978-0-443-16147-6.00004-9" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2024</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1016/j.heliyon.2024.e36842" target="_blank" rel="noopener">A defected ground structure based ultra-compact wider-bandwidth terahertz MIMO antenna for emerging communication systems</a></h3>
+          <div class="authors">P. Kumar, V. <b>Sivakumar</b>, et al.</div>
+          <div class="venue">Heliyon (Cell Press)</div>
+          <div class="tags"><span class="tag">SCI</span><a class="tag doi" href="https://doi.org/10.1016/j.heliyon.2024.e36842" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2024</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1109/ACCESS.2024.3397494" target="_blank" rel="noopener">Software fault prediction using cross-project analysis: a study on class imbalance and model generalization</a></h3>
+          <div class="authors">S. Kaliraj, A. M. Kishoore &amp; V. <b>Sivakumar</b></div>
+          <div class="venue">IEEE Access</div>
+          <div class="tags"><span class="tag">SCI</span><a class="tag doi" href="https://doi.org/10.1109/ACCESS.2024.3397494" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2024</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1002/cpe.8130" target="_blank" rel="noopener">Snake swarm optimization-based deep reinforcement learning for resource allocation in edge computing environment</a></h3>
+          <div class="authors">S. Kaliraj, V. <b>Sivakumar</b>, N. Premkumar &amp; S. Vatchala</div>
+          <div class="venue">Concurrency and Computation: Practice and Experience (Wiley)</div>
+          <div class="tags"><span class="tag">SCI</span><a class="tag doi" href="https://doi.org/10.1002/cpe.8130" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2024</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1002/ima.23013" target="_blank" rel="noopener">An efficient lung image classification and detection using spiral-optimized Gabor filter with convolutional neural network</a></h3>
+          <div class="authors">V. <b>Sivakumar</b>, Yogesh, S. Vatchala &amp; S. Kaliraj</div>
+          <div class="venue">Int. Journal of Imaging Systems and Technology (Wiley)</div>
+          <div class="tags"><span class="tag">SCI</span><a class="tag doi" href="https://doi.org/10.1002/ima.23013" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="conference">
+        <div class="yearbox"><div class="y">2023</div><div class="venue-type">Conference</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1109/ICMCT60483.2023.00011" target="_blank" rel="noopener">Underwater wireless sensor network node deployment topologies and localization performances</a></h3>
+          <div class="authors">B. H. Yogeshwary, B. Awadhiya, H. Anu, B. N. Aravind, V. <b>Sivakumar</b> &amp; N. Yashwanth</div>
+          <div class="venue">IEEE 8th Int. Conf. on Multimedia Communication Technologies, ICMCT 2023 (Xiamen)</div>
+          <div class="tags"><span class="tag">Scopus</span><a class="tag doi" href="https://doi.org/10.1109/ICMCT60483.2023.00011" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2023</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1002/dac.5604" target="_blank" rel="noopener">Doppler shift with Archimedes optimization algorithm for localizing unknown nodes in underwater sensor networks</a></h3>
+          <div class="authors">S. Kaliraj, B. Hariharan &amp; V. <b>Sivakumar</b></div>
+          <div class="venue">Int. Journal of Communication Systems (Wiley)</div>
+          <div class="tags"><span class="tag">SCI</span><a class="tag doi" href="https://doi.org/10.1002/dac.5604" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2023</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1007/s13748-021-00253-3" target="_blank" rel="noopener">A deep learning model for innovative evaluation of ideological and political learning</a></h3>
+          <div class="authors">B. Zhang, V. Velmayil &amp; V. <b>Sivakumar</b></div>
+          <div class="venue">Progress in Artificial Intelligence (Springer)</div>
+          <div class="tags"><span class="tag">SCI</span><a class="tag doi" href="https://doi.org/10.1007/s13748-021-00253-3" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2023</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1007/s13204-022-02382-0" target="_blank" rel="noopener">An efficient chaos-LSA integrated game theory algorithm for a QoS-assured delay-time control mechanism in a 6LoWPAN wireless body area network</a></h3>
+          <div class="authors">S. S. Rao &amp; V. <b>Sivakumar</b></div>
+          <div class="venue">Applied Nanoscience (Springer)</div>
+          <div class="tags"><span class="tag">SCI</span><a class="tag doi" href="https://doi.org/10.1007/s13204-022-02382-0" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2022</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1155/2022/3578002" target="_blank" rel="noopener">Energy-efficient Markov-based lifetime enhancement approach for underwater acoustic sensor network</a></h3>
+          <div class="authors">V. <b>Sivakumar</b>, G. R. Kanagachidambaresan &amp; V. Dhilip Kumar</div>
+          <div class="venue">Journal of Sensors (Hindawi)</div>
+          <div class="tags"><span class="tag">SCI</span><a class="tag doi" href="https://doi.org/10.1155/2022/3578002" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="chapter">
+        <div class="yearbox"><div class="y">2022</div><div class="venue-type">Chapter</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1007/978-981-16-3412-3" target="_blank" rel="noopener">An efficient trust-based supply chain management framework utilizing the Internet of Things and blockchain technology</a></h3>
+          <div class="authors">L. Kavisankar, V. <b>Sivakumar</b> &amp; T. Balachander</div>
+          <div class="venue">Blockchain Technologies (Springer)</div>
+          <div class="tags"><span class="tag">Scopus</span><a class="tag doi" href="https://doi.org/10.1007/978-981-16-3412-3" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2022</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3>Machine learning based performance anomaly avoidance scheme for medical IoT applications</h3>
+          <div class="authors">S. S. Rao &amp; V. <b>Sivakumar</b></div>
+          <div class="venue">Journal of Theoretical and Applied Information Technology</div>
+          <div class="tags"><span class="tag">Scopus</span></div>
+        </div>
+      </article>
+      <article class="pub" data-type="conference">
+        <div class="yearbox"><div class="y">2021</div><div class="venue-type">Conference</div></div>
+        <div>
+          <h3>Predicting student grade using machine learning techniques</h3>
+          <div class="authors">S. Kaliraj, V. <b>Sivakumar</b>, D. Vivek, B. Hariharan &amp; R. Siva</div>
+          <div class="venue">Advances in Intelligent Systems and Computing, vol. 1369 (Springer)</div>
+          <div class="tags"><span class="tag">Scopus</span></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2021</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.3233/WOR-203423" target="_blank" rel="noopener">Machine learning techniques based on security management in smart cities using robots</a></h3>
+          <div class="authors">Z. Mengqi, W. Xi, Sathishkumar &amp; V. <b>Sivakumar</b></div>
+          <div class="venue">Work (IOS Press)</div>
+          <div class="tags"><span class="tag">SCI</span><a class="tag doi" href="https://doi.org/10.3233/WOR-203423" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2021</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1016/j.eiar.2020.106499" target="_blank" rel="noopener">Research on deep integration of artificial intelligence in environmental monitoring systems and the real economy</a></h3>
+          <div class="authors">X. Zhang, K. Shu, S. Rajkumar &amp; V. <b>Sivakumar</b></div>
+          <div class="venue">Environmental Impact Assessment Review (Elsevier)</div>
+          <div class="tags"><span class="tag">SCI</span><a class="tag doi" href="https://doi.org/10.1016/j.eiar.2020.106499" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="conference">
+        <div class="yearbox"><div class="y">2020</div><div class="venue-type">Conference</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1109/CISPSSE49931.2020.9212209" target="_blank" rel="noopener">Real-time resume classification system using LinkedIn profile descriptions</a></h3>
+          <div class="authors">S. Ramraj &amp; V. <b>Sivakumar</b></div>
+          <div class="venue">IEEE Int. Conf. on Computational Intelligence for Smart Power System and Sustainable Energy, CISPSSE 2020</div>
+          <div class="tags"><span class="tag">Scopus</span><a class="tag doi" href="https://doi.org/10.1109/CISPSSE49931.2020.9212209" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2020</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1016/j.comcom.2020.05.044" target="_blank" rel="noopener">Fog-computing-based hybrid deep learning framework for an effective inspection system in smart manufacturing</a></h3>
+          <div class="authors">S. Y. Lin, Y. Du, P. C. Ko, T.-J. Wu, P. T. Ho, V. <b>Sivakumar</b> &amp; S. Ramasubbareddy</div>
+          <div class="venue">Computer Communications (Elsevier)</div>
+          <div class="tags"><span class="tag">SCI</span><a class="tag doi" href="https://doi.org/10.1016/j.comcom.2020.05.044" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2020</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1080/17517575.2020.1762123" target="_blank" rel="noopener">Energy-optimised IoT-assisted multiple fuzzy aggregated energy scheduling approach for smart scheduling systems</a></h3>
+          <div class="authors">H. Ju, Y. Chen, V. <b>Sivakumar</b> &amp; C. B. Sivaparthipan</div>
+          <div class="venue">Enterprise Information Systems (Taylor &amp; Francis)</div>
+          <div class="tags"><span class="tag">SCI</span><a class="tag doi" href="https://doi.org/10.1080/17517575.2020.1762123" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2020</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1002/cpe.5166" target="_blank" rel="noopener">A QoS-aware energy-efficient memetic flower pollination routing protocol for underwater acoustic sensor network</a></h3>
+          <div class="authors">V. <b>Sivakumar</b> &amp; D. Rekha</div>
+          <div class="venue">Concurrency and Computation: Practice and Experience (Wiley)</div>
+          <div class="tags"><span class="tag">SCI</span><a class="tag doi" href="https://doi.org/10.1002/cpe.5166" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="conference">
+        <div class="yearbox"><div class="y">2020</div><div class="venue-type">Conference</div></div>
+        <div>
+          <h3>Intelligent web-history based on a hybrid clustering algorithm for future-internet systems</h3>
+          <div class="authors">S. S. Samy, V. <b>Sivakumar</b>, T. Sood &amp; Y. S. Negi</div>
+          <div class="venue">Advances in Intelligent Systems and Computing, vol. 1056 (Springer)</div>
+          <div class="tags"><span class="tag">Scopus</span></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2019</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1007/s00034-019-01316-6" target="_blank" rel="noopener">A review of multi-resolution analysis (MRA) and multi-geometric analysis (MGA) tools used in the fusion of remote-sensing images</a></h3>
+          <div class="authors">P. Mangalraj, V. <b>Sivakumar</b>, S. Karthick, et al.</div>
+          <div class="venue">Circuits, Systems, and Signal Processing (Springer)</div>
+          <div class="tags"><span class="tag">SCI</span><a class="tag doi" href="https://doi.org/10.1007/s00034-019-01316-6" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2018</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3>Prediction of heart disease risk using machine learning</h3>
+          <div class="authors">V. Haribaabu &amp; V. <b>Sivakumar</b></div>
+          <div class="venue">Int. Journal of Mechanical and Production Engineering Research and Development</div>
+          <div class="tags"><span class="tag">Scopus</span></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2018</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3>Analysis for guaranteeing performance in MapReduce systems with Hadoop and R</h3>
+          <div class="authors">L. Anand &amp; V. <b>Sivakumar</b></div>
+          <div class="venue">Int. Journal of Engineering and Technology</div>
+          <div class="tags"><span class="tag">Scopus</span></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2018</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1007/s00779-018-1136-3" target="_blank" rel="noopener">Node scheduling problem in underwater acoustic sensor network using genetic algorithm</a></h3>
+          <div class="authors">V. <b>Sivakumar</b> &amp; D. Rekha</div>
+          <div class="venue">Personal and Ubiquitous Computing (Springer)</div>
+          <div class="tags"><span class="tag">SCI</span><a class="tag doi" href="https://doi.org/10.1007/s00779-018-1136-3" target="_blank" rel="noopener">DOI ↗</a></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2018</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3>A novel simulation of Bellman-Dymo protocol in VANET ad-hoc networks</h3>
+          <div class="authors">L. Pavithra, V. <b>Sivakumar</b> &amp; S. Anuja</div>
+          <div class="venue">Int. Journal of Engineering and Technology</div>
+          <div class="tags"><span class="tag">Scopus</span></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2018</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3>Survey and implementation on classification algorithms with an approach on the environment</h3>
+          <div class="authors">U. Vignesh, V. <b>Sivakumar</b> &amp; N. V. Ramana</div>
+          <div class="venue">Int. Journal of Engineering and Technology</div>
+          <div class="tags"><span class="tag">Scopus</span></div>
+        </div>
+      </article>
+      <article class="pub" data-type="journal">
+        <div class="yearbox"><div class="y">2018</div><div class="venue-type">Journal</div></div>
+        <div>
+          <h3>Underwater acoustic sensor node scheduling using an evolutionary memetic algorithm</h3>
+          <div class="authors">V. <b>Sivakumar</b> &amp; D. Rekha</div>
+          <div class="venue">Journal of Telecommunications and Information Technology</div>
+          <div class="tags"><span class="tag">Scopus</span></div>
+        </div>
+      </article>
+    </div>
+    <div class="alllinks reveal">
+      <span class="lab">Full record</span>
+      <a class="chip" href="https://scholar.google.com/citations?hl=en&user=Lfr4JNYAAAAJ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3L1 9l11 6 9-4.9V17h2V9L12 3z"/></svg>Google Scholar</a>
+      <a class="chip" href="https://www.scopus.com/authid/detail.uri?authorId=57201771303" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15 9.2c-.8-.7-1.9-1-2.9-1-1.6 0-2.8.8-2.8 2.1 0 3 6 1.4 6 4.4 0 1.4-1.4 2.3-3 2.3-1.2 0-2.4-.5-3.1-1.3" stroke-linecap="round"/></svg>Scopus</a>
+      <a class="chip" href="https://orcid.org/0000-0001-9910-726X" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM8.3 7.4a.95.95 0 110 1.9.95.95 0 010-1.9zM7.4 10.2h1.8v7.3H7.4v-7.3zm3.4 0h3.3c2.6 0 3.9 1.7 3.9 3.7 0 2.1-1.6 3.6-3.9 3.6h-3.3v-7.3zm1.8 1.6v4.1h1.4c1.5 0 2.3-.9 2.3-2 0-1.2-.7-2.1-2.3-2.1h-1.4z"/></svg>ORCID</a>
+      <a class="chip" href="https://researcher.manipal.edu/en/persons/sivakumar-v/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3 21h18M5 21V9l7-4 7 4v12" stroke-linejoin="round"/><path d="M9.5 21v-5h5v5" stroke-linejoin="round"/></svg>MAHE portal</a>
+      <a class="chip" href="https://www.webofscience.com/wos/author/record/AAI-2585-2020" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18" stroke-linecap="round"/><path d="M12 3a14 14 0 010 18M12 3a14 14 0 000 18" stroke-linecap="round"/></svg>Web of Science</a>
+    </div>
+  </div>
+</section>
+<section class="sec-surface-2" id="patents" aria-label="Patents">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Patents &amp; IP</span>
+      <h2>Granted patents &amp; design registrations.</h2>
+      <p>Five granted patents and design registrations spanning driver safety, agricultural IoT, software design tooling, computer-vision security, and connected kiosks.</p>
+    </div>
+    <div class="awards reveal">
+      <div class="award"><div class="ayr">2023</div><div><h3>Device for vehicle driver drowsiness detection</h3><p>Design patent granted · No. 392565-001</p></div></div>
+      <div class="award"><div class="ayr">2023</div><div><h3>IoT-enabled chemical mixing device for agriculture farms</h3><p>Design patent granted · No. 390600-001</p></div></div>
+      <div class="award"><div class="ayr">2020</div><div><h3>A system for suggestion of elements of software design and a method thereof</h3><p>Utility patent granted · App. No. 202041048877</p></div></div>
+      <div class="award"><div class="ayr">2020</div><div><h3>An AI-vision-based home intruder detection and alarming system</h3><p>Patent filed · App. No. 202041045167</p></div></div>
+      <div class="award"><div class="ayr">2020</div><div><h3>Kiosk for dispensing magazine-cum-newspaper using UPI and IoT</h3><p>Patent filed · App. No. 202041035276</p></div></div>
+    </div>
+  </div>
+</section>
+<section class="sec-surface" id="supervision" aria-label="Doctoral supervision">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Doctoral Supervision</span>
+      <h2>Research scholars &amp; doctoral committee service.</h2>
+      <p>Guiding and co-guiding Ph.D. scholars in underwater sensing, medical imaging, and agricultural AI — and serving on doctoral advisory committees and as a thesis examiner across institutions.</p>
+    </div>
+
+    <div class="reveal"><div class="sub-h first">Research scholars (Ph.D.)</div></div>
+    <div class="scholars reveal">
+      <div class="pcard scholar">
+        <span class="rbadge guide">Guide</span>
+        <h3>Smart energy management for dynamic underwater acoustic sensor networks using artificial intelligence</h3>
+        <div class="meta"><span class="pill">Lyzandra D&#x27;Souza</span><span class="pill">Part-time scholar</span></div>
+        <div class="cosup">Co-guide: Dr. N. D. Adesh</div>
+      </div>
+      <div class="pcard scholar">
+        <span class="rbadge guide">Guide</span>
+        <h3>Intelligent underwater vision-based structural health monitoring framework for autonomous ocean infrastructure inspection</h3>
+        <div class="meta"><span class="pill">Akshatha Dange K</span><span class="pill">Full-time scholar</span></div>
+        <div class="cosup">Co-guides: Dr. S. Kaliraj, Dr. Radhakrishna Bhat</div>
+      </div>
+      <div class="pcard scholar">
+        <span class="rbadge guide">Guide</span>
+        <h3>AI-Driven Framework for Cashew Leaves Disease Detection and Severity Assessment</h3>
+        <div class="meta"><span class="pill">Deepali Madhukar Raikar</span><span class="pill">Ph.D. scholar</span></div>
+        <div class="cosup">Co-guide: Dr. N. D. Adesh</div>
+      </div>
+      <div class="pcard scholar">
+        <span class="rbadge coguide">Co-guide</span>
+        <h3>Intelligent decision support systems using dental imaging data</h3>
+        <div class="meta"><span class="pill">Roopitha C H</span><span class="pill">Full-time scholar</span></div>
+        <div class="cosup">Guide: Dr. Veena Mayya</div>
+      </div>
+    </div>
+
+    <div class="reveal"><div class="sub-h">Doctoral Advisory Committee (DAC) membership</div></div>
+    <div class="grants reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3.5 19a5.5 5.5 0 0111 0" stroke-linecap="round"/><path d="M16 5.2a3 3 0 010 5.6M17.5 19a5.5 5.5 0 00-3-4.9" stroke-linecap="round"/></svg><div><h4>Active DAC member across institutions</h4><p>Serves as a Ph.D. Doctoral Advisory Committee member for research scholars at:</p><div class="interests" style="margin-top:12px;"><span class="pill">VIT</span><span class="pill">SRM University</span><span class="pill">Dayananda Sagar University</span><span class="pill">and other institutions</span></div></div></div>
+
+    <div class="reveal"><div class="sub-h">Ph.D. thesis examination</div></div>
+    <div class="awards reveal">
+      <div class="award"><div class="ayr">2026</div><div><h3>Analysis and classification of cesarean section and normal vaginal delivery using machine learning algorithms</h3><p>Hemalatha S. · Sathyabama Institute of Science and Technology, Chennai · Evaluator &amp; Viva-Voce Examiner</p></div></div>
+      <div class="award"><div class="ayr">2026</div><div><h3>Investigation of fruit yield estimation using artificial markers and deep-learning segmentation techniques</h3><p>Devender Nayak · Vellore Institute of Technology (VIT), Vellore · Evaluator &amp; Viva-Voce Examiner</p></div></div>
+      <div class="award"><div class="ayr">2025</div><div><h3>Advanced deep learning techniques for automatic target recognition in synthetic aperture radar images</h3><p>Bileesh P. Babu · Vellore Institute of Technology (VIT), Vellore · Evaluator &amp; Viva-Voce Examiner</p></div></div>
+      <div class="award"><div class="ayr">2025</div><div><h3>Road accident severity prediction and brake-light detection using decision-level fusion of ANN and YOLOv8</h3><p>Manoj Kushwaha · SRM IST, Kattankulathur · Evaluator &amp; Viva-Voce Examiner</p></div></div>
+      <div class="award"><div class="ayr">2025</div><div><h3>Automated incongruity recognition model using optimized ensemble pattern extraction, condensation and classification</h3><p>Poorni R · SRM IST, Kattankulathur · Evaluator &amp; Viva-Voce Examiner</p></div></div>
+      <div class="award"><div class="ayr">2024</div><div><h3>Novel prediction model using an efficient parallel Eclat algorithm in GRU</h3><p>C. G. Anupama · SRM IST, Kattankulathur · Evaluator &amp; Viva-Voce Examiner</p></div></div>
+      <div class="award"><div class="ayr">2024</div><div><h3>Early detection of diabetic retinopathy using deep learning image augmentation</h3><p>A. Abirami · SRM IST, Ramapuram · Evaluator &amp; Viva-Voce Examiner</p></div></div>
+      <div class="award"><div class="ayr">2024</div><div><h3>Hybrid model for energy-efficient network slicing and data aggregation in wireless sensor networks</h3><p>B. Gracelin Sheena · SRM IST, Kattankulathur · Evaluator &amp; Viva-Voce Examiner</p></div></div>
+      <div class="award"><div class="ayr">2024</div><div><h3>A real-time dataset-driven hybrid deep learning paradigm for crop protection</h3><p>J. Sujithra · SRM IST, Kattankulathur · Evaluator &amp; Viva-Voce Examiner</p></div></div>
+    </div>
+  </div>
+</section>
+<section class="sec-surface-2" id="teaching" aria-label="Teaching">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Teaching</span>
+      <h2>Courses &amp; student projects.</h2>
+      <p>Graduate and undergraduate teaching across algorithms, networks, machine learning, and software engineering — alongside hands-on student project mentorship.</p>
+    </div>
+    <div class="tm-grid reveal">
+      <div class="tm-block">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M4 5a2 2 0 012-2h13v16H6a2 2 0 00-2 2z" stroke-linejoin="round"/><path d="M4 19a2 2 0 012-2h13"/></svg>Courses taught</h3>
+        <p class="sub">Graduate (M.E.) and undergraduate (B.E.) courses.</p>
+        <ul class="courselist">
+        <li><span class="cname">Underwater Sensor Networks</span><span class="clevel">Doctoral · Ph.D.</span></li>
+        <li><span class="cname">Explainable AI</span><span class="clevel">Doctoral · Ph.D.</span></li>
+        <li><span class="cname">Software Quality Assurance</span><span class="clevel">Graduate · M.E.</span></li>
+        <li><span class="cname">Data Warehousing &amp; Data Mining</span><span class="clevel">Graduate · M.E.</span></li>
+        <li><span class="cname">Data Visualization</span><span class="clevel">Graduate · M.E.</span></li>
+        <li><span class="cname">Design &amp; Analysis of Algorithms</span><span class="clevel">Undergraduate · B.E.</span></li>
+        <li><span class="cname">Data Structures</span><span class="clevel">Undergraduate · B.E.</span></li>
+        <li><span class="cname">Machine Learning Techniques</span><span class="clevel">Undergraduate · B.E.</span></li>
+        <li><span class="cname">Software Engineering</span><span class="clevel">Undergraduate · B.E.</span></li>
+        <li><span class="cname">System Software</span><span class="clevel">Undergraduate · B.E.</span></li>
+        <li><span class="cname">Computer Networks</span><span class="clevel">Undergraduate · B.E.</span></li>
+        <li><span class="cname">Security in Networks &amp; Software Development</span><span class="clevel">Undergraduate · B.E.</span></li>
+        <li><span class="cname">Social Network Analysis</span><span class="clevel">Undergraduate · B.E.</span></li>
+        <li><span class="cname">Wireless &amp; Mobile Communication</span><span class="clevel">Undergraduate · B.E.</span></li>
+        </ul>
+      </div>
+      <div class="tm-block">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke-linejoin="round"/></svg>Student projects guided</h3>
+        <p class="sub">Selected supervised projects spanning systems, networks, and machine learning.</p>
+        <ul class="courselist">
+        <li><span class="cname">LocaRent — the smart rental companion</span><span class="clevel">Android</span></li>
+        <li><span class="cname">Routing protocols in underwater WSNs — simulation &amp; performance analysis</span><span class="clevel">Aqua-Sim</span></li>
+        <li><span class="cname">Smart network connectivity of WSNs in military areas</span><span class="clevel">MATLAB</span></li>
+        <li><span class="cname">Image classification with convolutional neural networks</span><span class="clevel">Machine learning</span></li>
+        <li><span class="cname">Stock price prediction</span><span class="clevel">Machine learning</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="reveal" style="margin-top:24px;">
+      <div class="sub-h">Teaching &amp; research interests</div>
+      <div class="interests"><span class="pill">Underwater Sensor Networks</span><span class="pill">Evolutionary Computing</span><span class="pill">Machine Learning</span><span class="pill">Deep Learning</span><span class="pill">Algorithms &amp; Complexity</span><span class="pill">Computer Vision</span><span class="pill">Internet of Things</span><span class="pill">Wireless Sensor Networks</span></div>
+    </div>
+  </div>
+</section>
+<section class="sec-surface" id="recognition" aria-label="Recognition and service">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Recognition &amp; Service</span>
+      <h2>Awards, professional service &amp; memberships.</h2>
+      <p>Certifications and scholarships, conference organization, journal peer review, and professional society membership.</p>
+    </div>
+
+    <div class="reveal"><div class="sub-h first">Awards &amp; certifications</div></div>
+    <div class="awards reveal">
+      <div class="award"><div class="ayr">2020</div><div><h3>IBM Data Science Professional — Visualizing Data with Python</h3><p>IBM (online)</p></div></div>
+      <div class="award"><div class="ayr">2020</div><div><h3>Introduction to Data Science in Python</h3><p>University of Michigan (online)</p></div></div>
+      <div class="award"><div class="ayr">2020</div><div><h3>Introduction to Virtual Reality</h3><p>University of London (online)</p></div></div>
+    </div>
+    <div class="reveal" style="margin-top:18px;"><div class="interests"><span class="pill">Earlier: D-Link Certified Trainer (DCT-Switching)</span><span class="pill">Earlier: Microsoft Certified — .NET Framework 2.0</span><span class="pill">Earlier: NIIT — Databases with SQL Server</span><span class="pill">Earlier: NIIT — .NET web application development</span></div></div>
+
+    <div class="reveal"><div class="sub-h">Conferences organized &amp; chaired</div></div>
+    <div class="awards reveal">
+      <div class="award"><div class="ayr">2022</div><div><h3>IEEE Int. Conf. on Electronic Systems and Intelligent Computing</h3><p>Organizer · Vel Tech IST, Chennai · Scopus-indexed</p></div></div>
+      <div class="award"><div class="ayr">2019</div><div><h3>Springer Int. Conf. on Artificial Intelligence and Evolutionary Computations in Engineering Systems</h3><p>Organizer · SRM IST, Chennai · Scopus-indexed</p></div></div>
+    </div>
+
+    <div class="reveal"><div class="sub-h">Invited talks &amp; keynotes</div></div>
+    <div class="awards reveal">
+      <div class="award"><div class="ayr">2026</div><div><h3>Keynote: “Human + AI — The New Formula for Career Success”</h3><p>National Conference on Reimagining Higher Education · Crossland College, Brahmavar, Karnataka</p></div></div>
+      <div class="award"><div class="ayr">2025</div><div><h3>Invited talk: “The Role of AI and ML in Underwater Exploration and Environmental Monitoring”</h3><p>Dept. of Information Technology, Kongunadu College of Engineering &amp; Technology, Tamil Nadu</p></div></div>
+      <div class="award"><div class="ayr">2024</div><div><h3>Expert speaker: six-day workshop on Earth System Changes using AI</h3><p>Technology Interchange &amp; Development programme · SRM IST, Chennai</p></div></div>
+    </div>
+
+    <div class="reveal"><div class="sub-h">Journal peer review</div></div>
+    <div class="grants reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M4 19V5h16v14H4z" stroke-linejoin="round"/><path d="M8 9h8M8 13h6" stroke-linecap="round"/></svg><div><h4>Reviewer for international journals</h4><div class="interests" style="margin-top:12px;"><span class="pill">IEEE Transactions on Intelligent Transportation Systems</span><span class="pill">IEEE Transactions on Industrial Informatics</span><span class="pill">ACM Transactions on Asian &amp; Low-Resource Language Information Processing</span><span class="pill">Neural Computing and Applications (Springer Nature)</span><span class="pill">European Journal of Remote Sensing (Taylor &amp; Francis)</span></div></div></div>
+
+    <div class="reveal"><div class="sub-h">Professional memberships</div></div>
+    <div class="reveal"><div class="interests"><span class="pill">Senior Member, IEEE</span><span class="pill">International Association of Engineers (IAENG)</span><span class="pill">The Institution of Engineers, India (IEI)</span><span class="pill">Indian Science Congress (ISC)</span></div></div>
+  </div>
+</section>
+<section class="contact" id="contact" aria-label="Contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Contact</span>
+      <h2>Let’s collaborate.</h2>
+      <p>Open to research collaboration, doctoral and student inquiries, thesis examination, and industry partnerships in intelligent networked systems and applied AI.</p>
+    </div>
+    <div class="contact-grid reveal">
+      <div class="cinfo">
+        <div class="cline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6" stroke-linecap="round" stroke-linejoin="round"/></svg><span><span class="ct">Email</span><a href="mailto:sivakumar.v@manipal.edu">sivakumar.v@manipal.edu</a></span></div>
+        <div class="cline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M5 4h3l2 5-2 1.5a11 11 0 005 5L16 13l5 2v3a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke-linejoin="round"/></svg><span><span class="ct">Phone</span><a href="tel:+919003171307">+91 90031 71307</a></span></div>
+        <div class="cline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M12 21s-7-5.2-7-11a7 7 0 0114 0c0 5.8-7 11-7 11z" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5"/></svg><span><span class="ct">Office</span><span>School of Computer Engineering, Manipal Institute of Technology, MAHE, Manipal, Karnataka 576104, India</span></span></div>
+        <div class="cline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M4 19V5h16v14H4z" stroke-linejoin="round"/><path d="M8 9h8M8 13h6" stroke-linecap="round"/></svg><span><span class="ct">Faculty page</span><a href="https://www.manipal.edu/mit/department-faculty/faculty-list/Dr-Sivakumar-V.html" target="_blank" rel="noopener">manipal.edu — MIT faculty profile ↗</a></span></div>
+      </div>
+      <div class="clinks" aria-label="Profile links">
+        <a class="clink" href="https://scholar.google.com/citations?hl=en&user=Lfr4JNYAAAAJ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3L1 9l11 6 9-4.9V17h2V9L12 3z"/></svg>Google Scholar</a>
+        <a class="clink" href="https://www.scopus.com/authid/detail.uri?authorId=57201771303" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15 9.2c-.8-.7-1.9-1-2.9-1-1.6 0-2.8.8-2.8 2.1 0 3 6 1.4 6 4.4 0 1.4-1.4 2.3-3 2.3-1.2 0-2.4-.5-3.1-1.3" stroke-linecap="round"/></svg>Scopus profile</a>
+        <a class="clink" href="https://orcid.org/0000-0001-9910-726X" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM8.3 7.4a.95.95 0 110 1.9.95.95 0 010-1.9zM7.4 10.2h1.8v7.3H7.4v-7.3zm3.4 0h3.3c2.6 0 3.9 1.7 3.9 3.7 0 2.1-1.6 3.6-3.9 3.6h-3.3v-7.3zm1.8 1.6v4.1h1.4c1.5 0 2.3-.9 2.3-2 0-1.2-.7-2.1-2.3-2.1h-1.4z"/></svg>ORCID</a>
+        <a class="clink" href="https://www.webofscience.com/wos/author/record/AAI-2585-2020" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18" stroke-linecap="round"/><path d="M12 3a14 14 0 010 18M12 3a14 14 0 000 18" stroke-linecap="round"/></svg>Web of Science</a>
+        <a class="clink" href="https://www.linkedin.com/in/dr-v-sivakumar-ph-d-me-be-9090b21a9" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM8.3 18.3H5.7V9.8h2.6v8.5zM7 8.6a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm11.3 9.7h-2.6v-4.4c0-1.1-.4-1.8-1.4-1.8-.7 0-1.2.5-1.4 1-.1.2-.1.5-.1.7v4.5H10.2V9.8h2.6v1.1c.4-.6 1-1.3 2.4-1.3 1.8 0 3.1 1.1 3.1 3.6v5.1z"/></svg>LinkedIn</a>
+        <a class="clink" href="https://researcher.manipal.edu/en/persons/sivakumar-v/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3 21h18M5 21V9l7-4 7 4v12" stroke-linejoin="round"/><path d="M9.5 21v-5h5v5" stroke-linejoin="round"/></svg>MAHE portal</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div class="fb"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#0c2c47"/><g fill="none" stroke="#46E0CE" stroke-width="2" stroke-linecap="round"><path d="M5 19c2.4 0 2.4-6 4.8-6s2.4 6 4.8 6 2.4-6 4.8-6 2.4 6 4.8 6"/></g><circle cx="16" cy="9" r="2" fill="#46E0CE"/></svg>Dr. V. Sivakumar</div>
+    <p>Associate Professor · School of Computer Engineering · Manipal Institute of Technology, MAHE — <a href="#top">Back to top ↑</a></p>
+  </div>
+</footer>
+<div class="modal-overlay" id="cvModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="cvModalTitle">
+    <button type="button" class="modal-close" id="cvModalClose" aria-label="Close">&times;</button>
+    <span class="eyebrow">Request CV</span>
+    <h3 id="cvModalTitle">Request Dr. Sivakumar’s CV</h3>
+    <p class="modal-sub">The CV is shared on request. Submit your details and Dr. Sivakumar will email it to you directly.</p>
+    <form id="cvForm" novalidate>
+      <label>Full name<span class="req">*</span><input type="text" name="name" required autocomplete="name" /></label>
+      <label>Email<span class="req">*</span><input type="email" name="email" required autocomplete="email" /></label>
+      <label>Affiliation / organisation<input type="text" name="affiliation" autocomplete="organization" /></label>
+      <label>Purpose of request<textarea name="purpose" rows="3" placeholder="e.g. collaboration, recruitment, review committee…"></textarea></label>
+      <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none" />
+      <button type="submit" class="btn btn-primary" id="cvSubmit">Send request</button>
+      <p class="form-status" id="cvStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</div>
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---- Portrait fallback ---- */
+  var pi = document.getElementById('portraitImg'),
+      pf = document.getElementById('portraitFallback');
+  if(pi){
+    pi.addEventListener('error', function(){ pi.style.display='none'; pf.style.display='flex'; });
+    if(pi.complete && pi.naturalWidth===0){ pi.style.display='none'; pf.style.display='flex'; }
+  }
+
+  /* ---- Mobile menu ---- */
+  var mb = document.getElementById('menuBtn'),
+      nl = document.getElementById('navlinks');
+  function closeMenu(){ mb.setAttribute('aria-expanded','false'); nl.classList.remove('open'); }
+  mb.addEventListener('click', function(){
+    var open = mb.getAttribute('aria-expanded')==='true';
+    mb.setAttribute('aria-expanded', String(!open));
+    nl.classList.toggle('open', !open);
+  });
+  nl.addEventListener('click', function(e){ if(e.target.tagName==='A') closeMenu(); });
+
+  /* ---- Active nav highlight + scroll reveal ---- */
+  var links = Array.prototype.slice.call(nl.querySelectorAll('a'));
+  var sections = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+
+  var navObs = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        var id = '#'+en.target.id;
+        links.forEach(function(a){ a.classList.toggle('active', a.getAttribute('href')===id); });
+      }
+    });
+  }, {rootMargin:'-45% 0px -50% 0px', threshold:0});
+  sections.forEach(function(s){ navObs.observe(s); });
+
+  var revObs = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        en.target.classList.add('in');
+        // trigger child bar/fill animations
+        var fp = en.target.querySelector('.fpbars'); if(fp) fp.classList.add('in');
+        if(en.target.classList.contains('fpbars')) en.target.classList.add('in');
+        var bars = en.target.querySelector('.bars'); if(bars) bars.classList.add('in');
+        revObs.unobserve(en.target);
+      }
+    });
+  }, {threshold:0.14});
+  document.querySelectorAll('.reveal').forEach(function(el){ revObs.observe(el); });
+  // bars/fp may sit inside reveal already handled; ensure standalone catch
+  document.querySelectorAll('.bars, .fpbars').forEach(function(el){
+    var o = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');o.unobserve(e.target);}});},{threshold:0.2});
+    o.observe(el);
+  });
+
+  /* ---- Count-up metrics ---- */
+  function countUp(el){
+    var target = parseInt(el.getAttribute('data-count'),10);
+    var suffix = el.getAttribute('data-suffix') || '';
+    if(reduce){ el.textContent = target + suffix; return; }
+    var start = null, dur = 1300;
+    function step(ts){
+      if(!start) start = ts;
+      var p = Math.min((ts-start)/dur, 1);
+      var eased = 1 - Math.pow(1-p, 3);
+      el.textContent = Math.round(target*eased) + suffix;
+      if(p<1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var mObs = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ countUp(en.target); mObs.unobserve(en.target); } });
+  }, {threshold:0.5});
+  document.querySelectorAll('.metric .num').forEach(function(el){ mObs.observe(el); });
+
+  /* ---- Sonar / sensor-network hero animation ---- */
+  var canvas = document.getElementById('sonar');
+  if(canvas){
+    var ctx = canvas.getContext('2d'),
+        W=0,H=0,dpr=1, nodes=[], pings=[], snow=[], last=0, rafId=null, visible=true;
+    var AQUA='rgba(70,224,206,';
+
+    function resize(){
+      dpr = Math.min(window.devicePixelRatio||1, 2);
+      W = canvas.clientWidth; H = canvas.clientHeight;
+      canvas.width = Math.round(W*dpr); canvas.height = Math.round(H*dpr);
+      ctx.setTransform(dpr,0,0,dpr,0,0);
+    }
+    function build(){
+      resize();
+      var count = Math.max(9, Math.min(18, Math.round(W/78)));
+      nodes = [];
+      for(var i=0;i<count;i++){
+        nodes.push({
+          x: Math.random()*W,
+          y: 70 + Math.random()*(H-120),
+          phase: Math.random()*Math.PI*2,
+          amp: 5 + Math.random()*9,
+          spd: 0.0005 + Math.random()*0.0007,
+          r: 1.6 + Math.random()*2,
+          ox: 0,
+          ping: 1200 + Math.random()*5000
+        });
+      }
+      snow = [];
+      var sc = Math.max(14, Math.min(34, Math.round(W/40)));
+      for(var j=0;j<sc;j++){
+        snow.push({x:Math.random()*W, y:Math.random()*H, s:0.2+Math.random()*0.5, r:0.6+Math.random()*1.3, a:0.05+Math.random()*0.18});
+      }
+      pings = [];
+    }
+
+    function draw(t){
+      var dt = Math.min(t-last, 50); last = t;
+      ctx.clearRect(0,0,W,H);
+
+      // marine snow
+      for(var s=0;s<snow.length;s++){
+        var p = snow[s];
+        p.y += p.s; p.x += Math.sin((t*0.0002)+p.y*0.01)*0.15;
+        if(p.y>H+4){ p.y=-4; p.x=Math.random()*W; }
+        ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,6.283);
+        ctx.fillStyle='rgba(170,205,225,'+p.a+')'; ctx.fill();
+      }
+
+      // compute node positions
+      for(var i=0;i<nodes.length;i++){
+        var n=nodes[i];
+        n.phase += n.spd*dt;
+        n.cy = n.y + Math.sin(n.phase)*n.amp;
+        n.cx = n.x + Math.cos(n.phase*0.6)*4;
+      }
+
+      // links
+      for(var a=0;a<nodes.length;a++){
+        for(var b=a+1;b<nodes.length;b++){
+          var dx=nodes[a].cx-nodes[b].cx, dy=nodes[a].cy-nodes[b].cy;
+          var d=Math.sqrt(dx*dx+dy*dy);
+          if(d<155){
+            var al=(1-d/155)*0.16;
+            ctx.beginPath();
+            ctx.moveTo(nodes[a].cx,nodes[a].cy);
+            ctx.lineTo(nodes[b].cx,nodes[b].cy);
+            ctx.strokeStyle='rgba(120,200,220,'+al+')';
+            ctx.lineWidth=1; ctx.stroke();
+          }
+        }
+      }
+
+      // pings spawn
+      for(var k=0;k<nodes.length;k++){
+        var nd=nodes[k];
+        nd.ping -= dt;
+        if(nd.ping<=0){
+          pings.push({x:nd.cx,y:nd.cy,r:0,max:90+Math.random()*120});
+          nd.ping = 3500 + Math.random()*5000;
+        }
+      }
+      // pings draw
+      for(var q=pings.length-1;q>=0;q--){
+        var pg=pings[q];
+        pg.r += dt*0.045;
+        var life=1-pg.r/pg.max;
+        if(life<=0){ pings.splice(q,1); continue; }
+        ctx.beginPath(); ctx.arc(pg.x,pg.y,pg.r,0,6.283);
+        ctx.strokeStyle=AQUA+(life*0.42)+')'; ctx.lineWidth=1.4; ctx.stroke();
+        if(pg.r>22){
+          ctx.beginPath(); ctx.arc(pg.x,pg.y,pg.r-18,0,6.283);
+          ctx.strokeStyle=AQUA+(life*0.18)+')'; ctx.lineWidth=1; ctx.stroke();
+        }
+      }
+
+      // nodes
+      for(var m=0;m<nodes.length;m++){
+        var node=nodes[m];
+        var glow=ctx.createRadialGradient(node.cx,node.cy,0,node.cx,node.cy,node.r*5);
+        glow.addColorStop(0,'rgba(127,235,221,0.5)');
+        glow.addColorStop(1,'rgba(127,235,221,0)');
+        ctx.beginPath(); ctx.arc(node.cx,node.cy,node.r*5,0,6.283); ctx.fillStyle=glow; ctx.fill();
+        ctx.beginPath(); ctx.arc(node.cx,node.cy,node.r,0,6.283); ctx.fillStyle='rgba(180,250,242,0.95)'; ctx.fill();
+      }
+
+      if(!reduce && visible) rafId = requestAnimationFrame(draw);
+    }
+
+    function start(){ if(rafId) return; last=performance.now(); rafId=requestAnimationFrame(draw); }
+    function stop(){ if(rafId){ cancelAnimationFrame(rafId); rafId=null; } }
+
+    build();
+    if(reduce){ last=performance.now(); draw(performance.now()); }
+    else start();
+
+    var rsz; window.addEventListener('resize', function(){ clearTimeout(rsz); rsz=setTimeout(function(){ build(); if(reduce) draw(performance.now()); }, 200); });
+    document.addEventListener('visibilitychange', function(){ if(document.hidden){ visible=false; stop(); } else if(!reduce){ visible=true; start(); } });
+    var hero=document.getElementById('hero');
+    if(hero && !reduce){
+      var hObs=new IntersectionObserver(function(es){ es.forEach(function(e){ visible=e.isIntersecting; if(e.isIntersecting) start(); else stop(); }); },{threshold:0.02});
+      hObs.observe(hero);
+    }
+  }
+})();
+</script>
+<script>
+(function(){
+  var btns=document.querySelectorAll('.fbtn');
+  var pubs=document.querySelectorAll('#publist .pub');
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      btns.forEach(function(x){x.classList.remove('active');});
+      b.classList.add('active');
+      var f=b.getAttribute('data-filter');
+      pubs.forEach(function(p){
+        p.hidden = !(f==='all' || p.getAttribute('data-type')===f);
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+  // === CONFIG: where CV requests are emailed ===
+  // Default: FormSubmit (no signup). Replace the email with your FormSubmit ALIAS
+  // (after first activation) to keep your address private, OR switch to Web3Forms.
+  var CV_REQUEST_ENDPOINT = "https://formsubmit.co/ajax/sivakumarvit2013@gmail.com";
+
+  var openBtn=document.getElementById('cvRequestBtn'),
+      overlay=document.getElementById('cvModal'),
+      closeBtn=document.getElementById('cvModalClose'),
+      form=document.getElementById('cvForm'),
+      statusEl=document.getElementById('cvStatus'),
+      submitBtn=document.getElementById('cvSubmit'),
+      lastFocus=null;
+  if(!openBtn||!overlay) return;
+
+  function open(){ lastFocus=document.activeElement; overlay.hidden=false; document.body.style.overflow='hidden';
+    var f=form.querySelector('input,textarea'); if(f) f.focus(); }
+  function close(){ overlay.hidden=true; document.body.style.overflow=''; if(lastFocus) lastFocus.focus(); }
+
+  openBtn.addEventListener('click', open);
+  closeBtn.addEventListener('click', close);
+  overlay.addEventListener('click', function(e){ if(e.target===overlay) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape' && !overlay.hidden) close(); });
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(form._honey && form._honey.value) return; // spam bot
+    if(!form.name.value.trim() || !form.email.value.trim()){
+      statusEl.className='form-status err'; statusEl.textContent='Please enter your name and email.'; return;
+    }
+    submitBtn.disabled=true; statusEl.className='form-status'; statusEl.textContent='Sending…';
+    fetch(CV_REQUEST_ENDPOINT, {
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body: JSON.stringify({
+        name: form.name.value, email: form.email.value,
+        affiliation: form.affiliation.value, purpose: form.purpose.value,
+        _subject: 'New CV request — academic website', _template: 'table', _captcha: 'false'
+      })
+    }).then(function(r){ return r.json().catch(function(){return {};}).then(function(d){ return {ok:r.ok, d:d}; }); })
+      .then(function(res){
+        if(res.ok){
+          form.style.display='none';
+          statusEl.className='form-status ok';
+          statusEl.textContent='Thank you — your request has been sent. Dr. Sivakumar will email the CV to you after review.';
+        } else {
+          submitBtn.disabled=false;
+          statusEl.className='form-status err';
+          statusEl.textContent=(res.d && res.d.message) ? res.d.message : 'Something went wrong. Please email sivakumar.v@manipal.edu directly.';
+        }
+      }).catch(function(){
+        submitBtn.disabled=false;
+        statusEl.className='form-status err';
+        statusEl.textContent='Network error. Please email sivakumar.v@manipal.edu directly.';
+      });
+  });
+})();
+</script>
+</body>
+</html>
