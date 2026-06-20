@@ -10,10 +10,6 @@ Single-file static site (`index.html`) for GitHub Pages.
 The "Request CV" button opens a form that EMAILS you the visitor's details
 (name, email, affiliation, purpose). The CV is NOT downloadable from the site.
 
-- **Do NOT commit the CV PDF to this repo.** If the PDF is in the repo it is publicly
-  reachable by URL, which defeats the gating. Keep the PDF on your computer and email
-  it to approved requesters yourself.
-
 ### Activate the email form (one-time)
 The form posts to **FormSubmit** (no signup). In `index.html`, find:
 `CV_REQUEST_ENDPOINT = "https://formsubmit.co/ajax/sivakumarvit2013@gmail.com";`
